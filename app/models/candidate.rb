@@ -1,5 +1,5 @@
 class Candidate < ActiveRecord::Base
-  belongs_to :vote
+  has_many :votes
 
   validates :name, presence: true
   validates :hometown, presence: true

@@ -5,7 +5,7 @@ class VoteTest < ActiveSupport::TestCase
     assert true
   end
 
-  test "vote class exists" do
+  test "Vote class exists" do
     assert Vote
   end
 end
