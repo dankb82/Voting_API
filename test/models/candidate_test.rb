@@ -8,4 +8,5 @@ class CandidateTest < ActiveSupport::TestCase
   test "Candidate class exists" do
     assert Candidate
   end
+
 end
