@@ -3,9 +3,9 @@
 one:
   name: MyString
   party: MyString
-  toke: MyText
+  token: MyText
 
 two:
   name: MyString
   party: MyString
-  toke: MyText
+  token: MyText
