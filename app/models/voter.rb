@@ -1,5 +1,6 @@
 class Voter < ActiveRecord::Base
-  belongs_to :vote
+  has_one :vote
+  
   validates :name, presence: true
   validates :party, presence: true
   validates :token, presence: true, uniqueness: true
