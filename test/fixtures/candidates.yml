@@ -1,13 +1,25 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  name: MyString
-  hometown: MyString
-  district: MyString
-  party: MyString
+  name: Mayor West
+  hometown: Raleigh
+  district: 102
+  party: Green
 
 two:
-  name: MyString
-  hometown: MyString
-  district: MyString
-  party: MyString
+  name: Daniel B
+  hometown: Raleigh
+  district: 555
+  party: Independent
+
+three:
+  name: Dr. Doom
+  hometown: Unknown
+  district: 666
+  party: Anarchist
+
+four:
+  name: Captain America
+  hometown": USA
+  district": 001
+  party: The People
