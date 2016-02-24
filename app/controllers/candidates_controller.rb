@@ -4,16 +4,10 @@ class CandidatesController < ApplicationController
   end
 
   def show
-    id = params["id"]
-    render json: Candidate.find(id)
+    render json: Candidate.where(id: params[:id])
   end
 
   def create
-    name = params["name"]
-    hometown = params["hometown"]
-    district = params["district"]
-    party = params["party"]
-    c = Candidate.create(name: name, hometown: hometown, district: district, party: party)
-    render json: c
+    c = Candidate.create(name: params["name"], hometown: params["hometown"], district: params["district"], party: params["party"])
   end
 end

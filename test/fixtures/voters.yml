@@ -1,11 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  name: MyString
-  party: MyString
-  token: MyText
+  name: Average Joe
+  party: Independent
+  token: aaa000
 
 two:
-  name: MyString
-  party: MyString
-  token: MyText
+  name: Jane Doe
+  party: Independent
+  token: bbb111

@@ -10,8 +10,6 @@ class VoterTest < ActiveSupport::TestCase
   end
 
   test "voter must have unique token" do
-    a = Voter.create!(name: "Dan", party: "Independent", token: "aaa000")
-    
-    assert_raises do b = Voter.create!(name: "Dave", party: "Republican", token: "aaa000")end
+  
   end
 end
