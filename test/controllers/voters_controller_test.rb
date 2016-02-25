@@ -7,13 +7,14 @@ class VotersControllerTest < ActionController::TestCase
   end
 
   test "should get show" do
-    get :show
+    get :show, id: voters(:one).id, token: voters(:one).token
     assert_response :success
   end
 
   test "should get update" do
     patch :update, id: voters(:one).id, token: voters(:one).token, name:
-    "John Doe" 
+    "John Doe"
+
     assert_response :success
   end
 

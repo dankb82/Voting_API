@@ -17,7 +17,6 @@ class VotersController < ApplicationController
     if v.token == params[:token]
        v.name = params[:name] if :name
        v.party = params[:party] if :party
-
     else
       render  json: "You may not update this record"
     end
