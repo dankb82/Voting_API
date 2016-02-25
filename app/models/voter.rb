@@ -1,14 +1,14 @@
+require 'securerandom'
+
 class Voter < ActiveRecord::Base
   has_one :vote
-
+  before_validation :generate_token
   validates :name, presence: true
   validates :party, presence: true
   validates :token, presence: true, uniqueness: true
 
-  # before_validation :ensure_token_has_a_value
 
-  #  private def ensure_token_has_a_value
-  #    if token.nil?
-  #    end
-  #  end
+   private def generate_token
+     self.token = SecureRandom.hex
+   end
 end

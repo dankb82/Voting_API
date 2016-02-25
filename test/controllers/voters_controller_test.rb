@@ -12,7 +12,8 @@ class VotersControllerTest < ActionController::TestCase
   end
 
   test "should get update" do
-    get :update
+    patch :update, id: voters(:one).id, token: voters(:one).token, name:
+    "John Doe" 
     assert_response :success
   end
 
